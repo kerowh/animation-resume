@@ -1,0 +1,50 @@
+
+*{
+    transition: all 1s;
+}
+
+html{
+    background: #eee;
+}
+
+#code{
+    border: 1px solid black;
+    padding: 16px
+}
+
+.token.selector{
+  color: black;
+}
+.token.property{
+  color: black;
+}
+.token.function{
+  color: black;
+}
+
+先把纸的位置确定好
+#code{
+  position: fixed;
+  width: 50%;
+  left: 0;
+  height: 100%;
+}
+
+#paper{
+  position: fixed;
+  width: 50%;
+  right: 0;
+  height: 100%;
+  background: #444;
+  padding: 16px;
+  /* 为了让content自动居中 */
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+#paper >.content{
+  width: 100%;
+  height: 100%;
+  background: white;
+}
